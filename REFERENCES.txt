@@ -1,0 +1,6 @@
+** Multi-directional intersection **
+https://www.sciencedirect.com/science/article/pii/S0191261522000303
+
+** 4-way roundabout **
+https://www.researchgate.net/publication/362494121_Modeling_of_Traffic_Flow_on_Roundabouts
+(idk how good this is, I haven't looked into it in depth)
