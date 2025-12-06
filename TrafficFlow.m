@@ -19,7 +19,29 @@ close all;
 
 %% FOUR WAY STOP
 
-% parameters
+% parameters / initial conditions
+L = ;
+Nfin = ;
+Nfout = ;
+Efin = ;
+Efout = ;
+Sfin = ;
+Sfout = ;
+Wfin = ;
+Wfout = ;
+Nf = ;
+Ef = ;
+Sf = ;
+Wf = ;
+Nth = ;
+Eth = ;
+Sth = ;
+Wth = ;
+a = ;
+b = ;
+v = ;
+w = ;
+rMax = ;
 
 % PDE
 
