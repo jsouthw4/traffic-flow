@@ -10,15 +10,25 @@ Nt  = round(Tend/dt) + 1;
 t = (0:Nt-1)*dt;
 
 % IDM parameters
-p.v0 = 30;        % desired speed (m/s)
-p.a = 1.2;        % max acceleration (m/s^2)
-p.b = 3.0;        % 2.0 is comfortable braking (m/s^2). Greater is strong breaking
-p.T = 1.2;        % 1.2 approx desired time headway (s)
-p.s0 = 0.75;      % min spacing(m) (comfortable is usually 1 m)
-p.delta = 4;      % acceleration exponent
+  p.v0 = 30;        % desired speed (m/s) int (30)
+  p.a = 1.2;        % max acceleration (m/s^2)
+  p.b = 2.0;        % 2.0 is comfortable braking (m/s^2). Greater is strong breaking
+  p.T = 1.2;        % 1.2 approx desired time headway (s)
+  p.s0 = 1.0;      % min spacing(m) (comfortable is usually 1 m)
+  p.delta = 4;      % acceleration exponent
+
+% UTAH DRIVER MODEL
+% Aggressive drivers
+  % p.v0    = 45;    % higher desired speed (m/s)
+  % p.a     = 2.5;   % stronger acceleration (m/s^2)
+  % p.b     = 4.5;   % harder braking (m/s^2)
+  % p.T     = 0.6;   % shorter headway (s) = tailgating
+  % p.s0    = 0.5;   % smaller minimum spacing (m)
+  % p.delta = 4;
+
 
 % Experiments (densities): choose car counts
-N_list = [28, 32, 42];
+N_list = [25,30,35,40,45,50,55,60];
 % N_list = [10];
 
 % For fundamental diagram measurement window (avoid transient)
